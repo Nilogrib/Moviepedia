@@ -155,7 +155,7 @@ def fetch_posters(movie_id):
     
     try:
         # Add error handling for the API key
-        api_key = '1e11674428d7876b9ba3dba8a9bfc977'
+        api_key = 'Your-API-Key'
         if not api_key:
             return "No API key configured"
 
@@ -211,7 +211,7 @@ def fetch_person_details(id_):
     try:
         response = session.get(
             f'https://api.themoviedb.org/3/person/{id_}',
-            params={'api_key': '1e11674428d7876b9ba3dba8a9bfc977'},
+            params={'api_key': 'Your-API-Key'},
             timeout=10
         )
         data = response.json()
